@@ -54,7 +54,7 @@ export const UI = ({ experienceRef }) => {
         <div className="flex items-center justify-between p-4 md:p-6">
           <div className="w-8 md:w-16" /> {/* Spacer for centering */}
           <h1 className="text-black text-xl md:text-3xl font-bold tracking-wider whitespace-nowrap">
-            MIXTAPE HYPERBOREA
+            GIANTS
           </h1>
           <a
             href="https://lampbylit.com"
