@@ -10,25 +10,25 @@ A React Three Fiber 3D application for showcasing different cover designs for th
 ## Book Specifications
 
 ### Physical Dimensions
-- **Book Trim Size**: 8" (width) × 5" (height) × 0.842" (spine depth)
-- **Cover Image Size**: 10.842" × 8.25" (wraparound: front + spine + back)
-- **Spine Width**: 0.842" (centered along the 8" axis)
+- **Book Trim Size**: 5.75" (width) × 8.5" (height) × 0.688" (spine depth)
+- **Cover Image Size**: 12.188" × 8.75" (wraparound: front + spine + back)
+- **Spine Width**: 0.688" (centered along the 8.5" axis)
 - **Page Count**: 237 pages (in real life, but not used for page-flipping in app)
-- **Opening Axis**: Opens along the 8" edge (spine runs along 8" dimension)
+- **Opening Axis**: Opens along the 8.5" edge (spine runs along 8.5" dimension)
 
 ### Aspect Ratios & Calculations
-- Book aspect ratio: 8:5 (1.6:1)
-- Cover wraparound ratio: 10.842:8.25 (≈1.314:1)
-- Spine occupies center 0.842" of the 10.842" width (≈7.77% of total width)
-- Front cover: 5" wide (from left edge)
-- Spine: 0.842" wide (center section)
-- Back cover: 5" wide (to right edge)
+- Book aspect ratio: 8.5:5.75 (≈1.478:1)
+- Cover wraparound ratio: 12.188:8.75 (≈1.393:1)
+- Spine occupies center 0.688" of the 12.188" width (≈5.64% of total width)
+- Front cover: 5.75" wide (from left edge)
+- Spine: 0.688" wide (center section)
+- Back cover: 5.75" wide (to right edge)
 
 ### 3D Book Behavior
 - **States**: Two states only - Closed or Open (no page flipping)
 - **Open State**: Opens to 120° angle, showing middle of book
 - **Interior**: Display blank pages when open
-- **Depth**: Must render with full spine depth (0.842") for realistic 3D appearance
+- **Depth**: Must render with full spine depth (0.688") for realistic 3D appearance
 - **Cover Application**: Single wraparound texture maps to front, spine, and back surfaces
 
 ## Cover Images
@@ -40,10 +40,10 @@ A React Three Fiber 3D application for showcasing different cover designs for th
 - **Naming**: Descriptive filenames (e.g., A0.png, A1.png, B0.png, etc.)
 
 ### Texture Mapping
-- Map the 10.842" × 8.25" image across:
-  - Left 5" → Front cover (when closed, visible front)
-  - Center 0.842" → Spine (visible when book is in any position)
-  - Right 5" → Back cover (when closed, visible back)
+- Map the 12.188" × 8.75" image across:
+  - Left 5.75" → Front cover (when closed, visible front)
+  - Center 0.688" → Spine (visible when book is in any position)
+  - Right 5.75" → Back cover (when closed, visible back)
 
 ## User Interface
 
@@ -130,7 +130,7 @@ A React Three Fiber 3D application for showcasing different cover designs for th
 ```
 
 ## Development Priorities
-1. ✅ Set up proper book dimensions (8" × 5" × 0.842")
+1. ✅ Set up proper book dimensions (5.75" × 8.5" × 0.688")
 2. ✅ Implement cover texture mapping from wraparound images
 3. ✅ Create thumbnail sidebar with toggle functionality
 4. ✅ Implement cover switching with loading state
